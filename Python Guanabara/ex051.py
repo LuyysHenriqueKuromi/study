@@ -1,9 +1,11 @@
-a1 = int(input('Digite o primeiro termo: '))
-r = int(input('Digite a razão: '))
-t = int(input('Digite a quantidade de termos: '))
-m = 0
+prim_ter = int(input('Digite o primeiro termo da PA: '))
+razao = int(input('Digite a razão da PA: '))
+quant = int(input('Digite a quantidade de termos: '))
+termos = prim_ter
 
-for c in range(1, t + 1):
-    pa = a1 + m * r
-    m = m + 1
-    print(pa)
+print(f'''O 1° termo da PA é {prim_ter} 
+Sua razão é {razao}''')
+
+for c in range(2, quant + 1):
+    termos += razao
+    print(f'O {c}° termo é {termos}')

@@ -1,10 +1,8 @@
 n1 = int(input('Digite o primeiro valor: '))
 n2 = int(input('Digite o segundo valor: '))
-maior = n1
 if n1 < n2:
-    maior = n2
-    print('O maior valor é {}'.format(maior))
-elif n1 == n2:
-    print('Não existe valor maior, os dois são iguais')
+    print('O PRIMEIRO valor é maior')
+elif n1 > n2:
+    print('O SEGUNDO valor é maior')
 else:
-    print('O maior valor é {}'.format(maior))
+    print('Os dois valores são IGUAIS')
